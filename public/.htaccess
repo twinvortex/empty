@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+
+	RewriteEngine On
+
+	# Redirect www to non www
+    RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+	# Redirect Trailing Slashes
+	RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+	# Handle Front Controller...
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+
+	# Rules for routes file
+	RewriteRule ^([a-z0-9-]+)$ index.php?do=$1 [QSA,L]
+	RewriteRule ^([a-z0-9-]+)/([a-z0-9-]+)-([0-9]+)$ index.php?do=$1&slug=$2&id=$3 [QSA,L]
+	RewriteRule ^([a-z0-9-]+)/([a-z0-9-\s+]+)$ index.php?do=$1&action=$2 [QSA,L]
+
+</IfModule>

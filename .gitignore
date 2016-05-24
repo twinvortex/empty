@@ -1,0 +1,4 @@
+/vendor
+/app/data/cache/*
+/app/data/sessions/*
+/app/data/templates_c/*

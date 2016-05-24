@@ -1,0 +1,19 @@
+{
+    "require": {
+        "illuminate/database": "^5.1",
+        "smarty/smarty": "^3.1",
+        "symfony/http-foundation": "^2.7",
+        "filp/whoops": "^1.1",
+        "phpmailer/phpmailer": "^5.2",
+        "symfony/console": "^2.7",
+        "mailgun/mailgun-php": "^1.8",
+        "eventviva/php-image-resize": "^1.5",
+        "nesbot/carbon": "^1.21"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vortex\\": "src/"
+        },
+        "files": ["src/Libs/functions/helpers.php"]
+    }
+}
