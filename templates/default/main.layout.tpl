@@ -40,7 +40,7 @@
 	{/block}
 
 {block name=analytics}
-	{include file="default/partials/ga.tpl"}
+	{include file="partials/ga.tpl"}
 {/block}
 {block name=bottom}{/block}
 </body>
