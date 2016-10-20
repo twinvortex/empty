@@ -1,8 +1,8 @@
 <?php
 
-namespace Vortex\Controllers\Admin;
+namespace App\Controllers\Admin;
 
-use Vortex\Controllers\BaseController;
+use App\Controllers\BaseController;
 use Symfony\Component\HttpFoundation\Session\Session;
 
 class DashboardController extends BaseController

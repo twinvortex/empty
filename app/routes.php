@@ -1,22 +1,26 @@
 <?php
-use Vortex\Controllers\PageController;
+use App\Controllers\PageController;
+use App\Controllers\TokenController;
+use App\Controllers\Admin\AdminController;
+use App\Controllers\Admin\DashboardController;
 
 switch ($request->get('do')) {
 	case '':
+        (new PageController())->showHomepage();
 		break;
 
     case 'dashboard':
         switch($request->get('action')) {
             case '':
-                (new \Vortex\Controllers\Admin\DashboardController())->dashboard();
+                (new DashboardController())->dashboard();
                 break;
 
             case 'login':
-                (new \Vortex\Controllers\Admin\AdminController())->login($request);
+                (new AdminController())->login($request);
                 break;
 
             case 'logout':
-                (new \Vortex\Controllers\Admin\AdminController())->logout();
+                (new AdminController())->logout();
                 break;
 
             default:

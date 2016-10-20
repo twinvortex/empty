@@ -1,11 +1,11 @@
 <?php
 
-date_default_timezone_set('America/New_York');
+date_default_timezone_set('UTC');
 
 require __DIR__ . '/../bootstrap/start.php';
 
 use Whoops\Run;
-use Vortex\System\Config\Config;
+use App\System\Config\Config;
 use Whoops\Handler\PrettyPageHandler;
 use Symfony\Component\HttpFoundation\Request;
 

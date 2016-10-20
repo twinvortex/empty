@@ -1,6 +1,6 @@
 <?php
 
-namespace Vortex\System\Config;
+namespace App\System\Config;
 
 class Config
 {

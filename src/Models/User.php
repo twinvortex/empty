@@ -1,6 +1,6 @@
 <?php
 
-namespace Vortex\Models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 

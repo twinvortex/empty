@@ -1,6 +1,6 @@
 <?php
 
-namespace Vortex\System\Forms;
+namespace App\System\Forms;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\Session;
@@ -31,6 +31,12 @@ class Token {
         $this->session->set($this->sessionName, $token);
 
         return $token;
+    }
+
+    public function generateField()
+    {
+        $token = $this->generate();
+        return '<input type="hidden" name="'.$this->fieldName.'" value="'.$token.'">';
     }
 
     public function isValid()

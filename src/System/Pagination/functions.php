@@ -1,6 +1,6 @@
 <?php
 
-use Vortex\System\Config\Config;
+use App\System\Config\Config;
 
 function pagination( $totalResults, $path, $sign = '/', $numResults = false) {
 

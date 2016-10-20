@@ -1,5 +1,6 @@
 <?php
 
+// Composer load
 require __DIR__ . '/../vendor/autoload.php';
 
 // Load Illuminate Database

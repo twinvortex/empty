@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Vortex\\": "src/"
+            "App\\": "src/"
         },
         "files": ["src/Libs/functions/helpers.php"]
     }

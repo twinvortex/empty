@@ -1,8 +1,8 @@
 <?php
 
-namespace Vortex\Controllers;
+namespace App\Controllers;
 
-use Vortex\System\Forms\Token;
+use App\System\Forms\Token;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
 class TokenController {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Vortex\System\Pagination;
+namespace App\System\Pagination;
 
-use Vortex\System\Config\Config;
+use App\System\Config\Config;
 
 class Pagination {
 
