@@ -33,7 +33,7 @@ class Token {
         return $token;
     }
 
-    public function generateField()
+    public function generateTokenField()
     {
         $token = $this->generate();
         return '<input type="hidden" name="'.$this->fieldName.'" value="'.$token.'">';
