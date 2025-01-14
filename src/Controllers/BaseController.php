@@ -6,8 +6,9 @@ use App\Models\User;
 use App\System\Config\Config;
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Symfony\Component\HttpFoundation\Response;
+use Smarty\Smarty;
 
-class BaseController extends \Smarty
+class BaseController extends Smarty
 {
     protected $config;
     protected $capsule;

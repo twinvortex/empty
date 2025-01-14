@@ -32,7 +32,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-12">
-						Copyright &copy; {'Y'|date} <a href="{$url}">{$domain}</a>
+						Copyright &copy; {$smarty.now|date_format:"%Y"} <a href="{$url}">{$domain}</a>
 					</div>
 				</div>
 			</div>

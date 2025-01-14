@@ -1,13 +1,13 @@
 {
     "require": {
         "illuminate/database": "^6.20",
-        "smarty/smarty": "~3.1",
-        "symfony/http-foundation": "^2.8.52",
-        "filp/whoops": "^1.1",
+        "smarty/smarty": "~5.4.3",
+        "symfony/http-foundation": "^5.4.46",
+        "filp/whoops": "^2.1.13",
         "phpmailer/phpmailer": "^6.1",
         "symfony/console": "^2.7",
         "mailgun/mailgun-php": "^1.8",
-        "nesbot/carbon": "^2.0.0",
+        "nesbot/carbon": "^2.72.6",
         "gumlet/php-image-resize": "^1.9"
     },
     "autoload": {
